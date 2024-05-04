@@ -3,8 +3,10 @@
 class Utility {
 
     public static function getBase(){
-         return 'http://localhost/portfolio/';
+        //  return 'http://localhost/portfolio/';
         //  return "https://panamed.com.ph/dev/panamed/";
+        
+        https://jerome2028.github.io/portfolio/;
     }
    public static function generateRandomString($length = 5) {
         $characters = '0123456789abcdefghkmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
