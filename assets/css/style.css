@@ -22,7 +22,7 @@ section {
 }
 
 .inmed-color {
-  color: #254e58;
+  color: #5c9df1 ;
 }
 
 a {
@@ -308,11 +308,12 @@ a.waves-effect .waves-ripple {
   /* padding: 10px 0 10px 30px; */
   font-family: "poppins", sans-serif;
   font-size: 14px;
-  color: #76ABAE;
+  color: #EEEEEE;
   white-space: nowrap;
   transition: 0.3s;
   padding: 11px 30px;
   font-size: 15px;
+  font-weight: 600;
 }
 .navbar a::after {
   content: '';
@@ -390,6 +391,72 @@ a.waves-effect .waves-ripple {
   left: 100%;
   visibility: visible;
 }
+.navbar .btn-warning {
+  background-color: #074173;
+  border:solid 1px #074173;
+  padding: 8px 30px;
+  font-weight: 600;
+}
+.navbar .btn-warning:hover{
+  background-color: #06335a;
+  border: solid 1px #06335a;
+}
+/* ----------------------- BLOB ----------------------*/
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(
+    180deg,
+    rgba(47, 184, 255,0.42) 31.77%,
+    #5c9df1 100%
+  );
+  mix-blend-mode: color-dodge;
+  -webkit-animation: move 20s infinite alternate;
+          animation: move 20s infinite alternate;
+  transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
+  transform: translate(-53px, -100px);
+}
+
+.blobb {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(47, 184, 255, 0.42) 31.77%, #76abae 100%);
+  mix-blend-mode: color-dodge;
+  -webkit-animation: move 20s infinite alternate;
+  animation: move 15s infinite alternate;
+  transition: 0.5s cubic-bezier(0.07, 0.8, 0.16, 1);
+  transform: translate(-50px, -50px);
+  left: 0;
+  bottom: 0;
+}
+
+
+
+@-webkit-keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius:24% 76% 35% 65% / 27% 36% 64% 73%
+  }
+}
+
+@keyframes move {
+  0%,100% { border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%; } 
+	14% { border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%; } 
+	28% { border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%; } 
+	42% { border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%; } 
+	56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
+	70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
+	84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+  
+
 /* ----------------------- Banner ----------------------*/
 #banner {
   width: 100%;
@@ -460,21 +527,21 @@ a.waves-effect .waves-ripple {
   transition: 0.5s;
 }
 #banner .btn-light:hover {
-  background-color:#ff6a36 ;
+  background-color:#1a373e ;
   /* background-color: transparent!important; */
-  border: solid 1px #ff6a36 !important;
+  border: solid 1px #1a373e !important;
   color: white!important;
 }
 #banner .btn-outline-warning {
   /* border: solid 1px #ff6a36 !important; */
   /* color: #ff6a36!important; */
-  background-color: #2b2b2b;
-  border: solid 1px #2b2b2b
+  background-color: #074173;
+  border: solid 1px #074173;
   
 }
 #banner .btn-outline-warning:hover {
-  border: solid 1px #2b2b2b !important;
-  background-color: transparent;
+  border: solid 1px #074173 !important;
+  background-color: #06335a;
   color: white!important;
 }
 /*--------------------------------------------------------------
