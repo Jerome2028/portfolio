@@ -164,7 +164,7 @@ ul li{
 }
 
 #header.header-transparent {
-  background: transparent;
+  background: #222831;
   /* background-color: #ffffff; */
   padding: 25px 0;
   position: relative;
@@ -308,7 +308,7 @@ a.waves-effect .waves-ripple {
   /* padding: 10px 0 10px 30px; */
   font-family: "poppins", sans-serif;
   font-size: 14px;
-  /* color: #666; */
+  color: #76ABAE;
   white-space: nowrap;
   transition: 0.3s;
   padding: 11px 30px;
@@ -325,6 +325,9 @@ a.waves-effect .waves-ripple {
 .navbar a:hover::after{
   width: 100%;
   transition: width .3s;
+}
+.navbar:hover {
+  color: #76ABAE;
 }
 .active {
   font-weight: 700!important;
@@ -391,7 +394,7 @@ a.waves-effect .waves-ripple {
 #banner {
   width: 100%;
   overflow: hidden;
-  padding: 285px 0px;
+  padding: 200px 0px;
   position: relative;
 }
 #banner::after {
