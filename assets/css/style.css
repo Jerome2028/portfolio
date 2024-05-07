@@ -54,7 +54,7 @@ h5,
 h6,
 .font-primary {
   font-family: 'Poppins', sans-serif!important;
-  color:#808080;
+  color:#ffffff;
 }
 ul li{
   list-style-type: none;
@@ -134,7 +134,6 @@ ul li{
   height: 40px;
   border-radius: 4px;
   transition: all 0.4s;
-  z-index:99999;
 }
 
 .back-to-top i {
@@ -174,7 +173,9 @@ ul li{
 }
 
 #header.header-scrolled {
-  background: rgb(246 246 246);
+  /* background: rgb(246 246 246); */
+  background: #1f262a;
+
   transition: all 0.5s;
   padding: 16px 0 !important;
   position: fixed;
@@ -419,6 +420,7 @@ a.waves-effect .waves-ripple {
           animation: move 20s infinite alternate;
   transition: 1s cubic-bezier(0.07, 0.8, 0.16, 1);
   transform: translate(-53px, -100px);
+  z-index: 9999;
 }
 
 .blobb {
@@ -491,7 +493,7 @@ a.waves-effect .waves-ripple {
 } */
 #banner .container {
   position: relative;
-  max-width: 1322px;
+  max-width: 1320px;
   margin: auto;
   z-index: 5;
   text-align: left;
@@ -511,7 +513,7 @@ a.waves-effect .waves-ripple {
 
 }
 #banner h1 {
-  color:#EEEEEE;
+  color:#ffffff;
   font-weight: bold;
   /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); */
   text-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
@@ -519,7 +521,7 @@ a.waves-effect .waves-ripple {
 }
 #banner p {
   letter-spacing: 0.5px;
-  color:#EEEEEE;
+  color:#ffffff;
 }
 #banner .quote-icon-left,#banner .quote-icon-right {
   color: #76ABAE;
@@ -592,4 +594,16 @@ a.waves-effect .waves-ripple {
 
 .meta-footer p{
   font-size: 11px;
+}
+/*--------------------------------------------------------------
+# About me
+--------------------------------------------------------------*/
+.about p {
+  line-height: 30px;
+}
+.about .blob {
+  width: 300px;
+  height: 300px;
+  animation: move 10s infinite alternate;
+  z-index: 9;
 }
