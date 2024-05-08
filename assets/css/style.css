@@ -19,6 +19,7 @@ body p {
 
 section {
   padding: 60px 0px;
+  scroll-margin-top: 14rem;
 }
 
 .inmed-color {
@@ -166,7 +167,7 @@ ul li{
 }
 
 #header.header-transparent {
-  background: #222831;
+  background: #272d37;
   /* background-color: #ffffff; */
   padding: 25px 0;
   position: relative;
@@ -193,9 +194,9 @@ ul li{
   margin-top: 80px;
 }
 #header .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
-    --bs-offcanvas-width: 250px!important;
-    --bs-offcanvas-padding-x: 0rem!important;
-    --bs-offcanvas-padding-y: 1rem!important;
+  --bs-offcanvas-width: 250px!important;
+  --bs-offcanvas-padding-x: 0rem!important;
+  --bs-offcanvas-padding-y: 1rem!important;
     
 }
 /*--------------------------------------------------------------
@@ -302,6 +303,7 @@ a.waves-effect .waves-ripple {
 
 .navbar li {
   position: relative;
+  padding: 11px 30px;
 }
 
 .navbar a, .navbar a:focus {
@@ -315,29 +317,32 @@ a.waves-effect .waves-ripple {
   color: #EEEEEE;
   white-space: nowrap;
   transition: 0.3s;
-  padding: 11px 30px;
+  /* padding: 11px 30px; */
   font-size: 15px;
   font-weight: 600;
 }
-.navbar a::after {
+.navbar a::after,.navbar a:visited {
   content: '';
   display: block;
   width: 0;
   height: 2px;
   transition: width .3s;
   background-color: #254e58;
+
 }
 .navbar a:hover::after{
   width: 100%;
   transition: width .3s;
 }
+.navbar a:visited{
+  border-bottom: solid 2px #fff!important;
+}
+.navbar a:active{
+  color: #76ABAE!important;
+}
+
 .navbar:hover {
   color: #76ABAE;
-}
-.active {
-  font-weight: 700!important;
-  /* color:#ea5420!important; */
-  color: #76ABAE !important;
 }
 .navbar .dropdown ul {
   display: block;
@@ -408,7 +413,7 @@ a.waves-effect .waves-ripple {
 /* ----------------------- BLOB ----------------------*/
 .blob {
   position: absolute;
-  width: 400px;
+  width: 300px;
   height: 400px;
   background: linear-gradient(
     180deg,
@@ -476,7 +481,8 @@ a.waves-effect .waves-ripple {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color:#222831;
+  /* background-color:#222831; */
+  background-color: #272d37;
   z-index: 1;
   background-size: cover !important;
 }
@@ -546,7 +552,7 @@ a.waves-effect .waves-ripple {
   
 }
 #banner .btn-outline-warning:hover {
-  border: solid 1px #074173 !important;
+  border: solid 1px #06335a !important;
   background-color: #06335a;
   color: white!important;
 }
@@ -602,8 +608,35 @@ a.waves-effect .waves-ripple {
   line-height: 30px;
 }
 .about .blob {
-  width: 300px;
+  width: 200px;
   height: 300px;
   animation: move 10s infinite alternate;
   z-index: 9;
+  transform: translate(0px, 0px);
+}
+/*--------------------------------------------------------------
+# Project
+--------------------------------------------------------------*/
+.project h2 {
+  font-weight: bold;
+}
+.project .bg-dark{
+  background-color: #2c343e!important;
+}
+.project .card{
+  border: solid 1px #2c343e!important;
+  border-radius: 0!important;
+}
+.project h5 {
+  font-weight: 700;
+}
+.project p {
+  font-weight: 600;
+}
+.project .bg-badge{
+  background-color: #074173;
+  border: solid 1px #074173;
+}
+.project span {
+  font-weight: 600;
 }
