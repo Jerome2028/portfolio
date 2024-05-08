@@ -508,7 +508,7 @@ a.waves-effect .waves-ripple {
 #banner .bg-inmed {
   background-color: #ff8b1e !important;
 }
-#banner button{
+#banner a{
   padding: 10px 30px;
   color : white;
   font-weight: 600;
@@ -613,6 +613,9 @@ a.waves-effect .waves-ripple {
   animation: move 10s infinite alternate;
   z-index: 9;
   transform: translate(0px, 0px);
+} 
+.about h2 {
+  font-weight: 700;
 }
 /*--------------------------------------------------------------
 # Project
@@ -639,4 +642,42 @@ a.waves-effect .waves-ripple {
 }
 .project span {
   font-weight: 600;
+}
+/*--------------------------------------------------------------
+# Project
+--------------------------------------------------------------*/
+/* .languages .lang-wrap {
+  border-top: 1px solid #eceff0;
+  border-left: 1px solid #eceff0;
+} */
+.languages .lang-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-right: 1px solid #eceff0;
+  border-bottom: 1px solid #eceff0; */
+  overflow: hidden;
+  background: transparent;
+  height: 120px;
+  padding: 40px;
+}
+.languages .lang-logo img {
+  max-width: 50%;
+  /* filter: grayscale(100); */
+}
+.languages img {
+  transition: all 0.4s ease-in-out;
+}
+.languages .lang-logo:hover img {
+  filter: none;
+  transform: scale(1.1);
+}
+.languages h2 {
+  font-weight: bold;
+}
+.certification h2{
+  font-weight: bold;
+}
+.certification p{
+text-align: center;
 }
