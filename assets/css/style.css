@@ -194,9 +194,10 @@ ul li{
   margin-top: 80px;
 }
 #header .offcanvas, .offcanvas-xxl, .offcanvas-xl, .offcanvas-lg, .offcanvas-md, .offcanvas-sm {
-  --bs-offcanvas-width: 250px!important;
-  --bs-offcanvas-padding-x: 0rem!important;
-  --bs-offcanvas-padding-y: 1rem!important;
+  width: 250px !important;
+  background-color: #252b35;
+  color: white;
+  padding: 0px 20px;
     
 }
 /*--------------------------------------------------------------
@@ -528,6 +529,7 @@ a.waves-effect .waves-ripple {
 #banner p {
   letter-spacing: 0.5px;
   color:#ffffff;
+  line-height: 1.5;
 }
 #banner .quote-icon-left,#banner .quote-icon-right {
   color: #76ABAE;
@@ -635,13 +637,27 @@ a.waves-effect .waves-ripple {
 }
 .project p {
   font-weight: 600;
+  margin-bottom: 0;
 }
 .project .bg-badge{
-  background-color: #074173;
-  border: solid 1px #074173;
+  background-color: #304879;
+  border: solid 1px #304879;
 }
 .project span {
   font-weight: 600;
+}
+.project .bg-dark img {
+  filter: drop-shadow(8px 8px 10px gray)!important;
+}
+.project .btn {
+  font-weight: bold;
+  color: white;
+  margin-top: 10px !important;
+  border-radius: 0;
+}
+.project .btn-primary {
+  background-color: #284a77;
+  border: 2px solid #284a77;
 }
 /*--------------------------------------------------------------
 # Project
