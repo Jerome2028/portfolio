@@ -61,6 +61,7 @@ ul li{
   list-style-type: none;
 }
 
+
 .loader-wrapper{
   width: 100%;
   height: 100%;
@@ -153,6 +154,9 @@ ul li{
   opacity: 1;
   position: fixed!important;
   bottom: 75px;
+}
+.mobile-nav-toggle {
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -329,15 +333,14 @@ a.waves-effect .waves-ripple {
   height: 2px;
   transition: width .3s;
   background-color: #254e58;
+  border: solid 1px #254e58;
 
 }
 .navbar a:hover::after{
   width: 100%;
   transition: width .3s;
 }
-.navbar a:visited{
-  border-bottom: solid 2px #fff!important;
-}
+
 .navbar a:active{
   color: #76ABAE!important;
 }
@@ -362,6 +365,9 @@ a.waves-effect .waves-ripple {
   overflow: hidden!important;
 }
 
+.navbar ul:nth-child(2){
+  display: none;
+}
 .navbar .dropdown ul li {
   min-width: 200px;
 }
@@ -407,9 +413,10 @@ a.waves-effect .waves-ripple {
   padding: 8px 30px;
   font-weight: 600;
 }
-.navbar .btn-warning:hover{
-  background-color: #06335a;
-  border: solid 1px #06335a;
+.navbar .btn-warning:hover,.navbar .btn-warning:focus,.navbar .btn-warning:active{
+  background-color: #06335a!important;
+  border: solid 1px #06335a!important;
+  color: white;
 }
 /* ----------------------- BLOB ----------------------*/
 .blob {
@@ -516,7 +523,8 @@ a.waves-effect .waves-ripple {
   margin-right: 2rem;
   letter-spacing: .5px;
   border-radius: 0px!important;
-      width: 20%;
+    width: 20%;
+    margin-bottom: 16px;
 
 }
 #banner h1 {
