@@ -182,7 +182,8 @@ ul li{
   background: #1f262a;
 
   transition: all 0.5s;
-  padding: 16px 0 !important;
+  /* padding: 16px 0 !important; */
+  padding: 0px 0px 6px 0px !important;
   position: fixed;
   color: #666 !important;
 }
@@ -704,4 +705,14 @@ a.waves-effect .waves-ripple {
 }
 .certification p{
 text-align: center;
+}
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+.bg-form{
+  /* background-color: #de5246; */
+  background-color: #303b49!important;
+}
+.form-email h2 {
+  font-weight: bold;
 }

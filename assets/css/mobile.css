@@ -43,7 +43,7 @@
         font-size: 2.5rem;
     }
     .about .col-lg-5 .w-50 {
-        width: 30% !important;
+        width: 50% !important;
     }
     .about .col-md-12:nth-child(2){
         order: 1!important;
@@ -65,6 +65,7 @@
         transform: translate(-50px, 0px);
         width: 200px;
         height: 300px;
+        top: 0;
     }
     #banner {
         padding: 100px 0px;
