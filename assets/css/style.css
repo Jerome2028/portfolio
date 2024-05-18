@@ -477,13 +477,13 @@ a.waves-effect .waves-ripple {
   
 
 /* ----------------------- Banner ----------------------*/
-#banner {
+.banner {
   width: 100%;
   overflow: hidden;
   padding: 200px 0px;
   position: relative;
 }
-#banner::after {
+.banner::after {
   content: "";
   position: absolute;
   /* left: 50%; */
@@ -495,18 +495,18 @@ a.waves-effect .waves-ripple {
   z-index: 1;
   background-size: cover !important;
 }
-/* #banner .overlay {
+/* .banner .overlay {
   position: absolute;
   top: 0;
   width: 100%;
   z-index: 3;
   background-size: cover !important;
 }
-#banner .overlay {
+.banner .overlay {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 } */
-#banner .container {
+.banner .container {
   position: relative;
   max-width: 1320px;
   margin: auto;
@@ -514,10 +514,10 @@ a.waves-effect .waves-ripple {
   text-align: left;
   padding: 0px 40px;
 }
-#banner .bg-inmed {
+.banner .bg-inmed {
   background-color: #ff8b1e !important;
 }
-#banner a{
+.banner a{
   padding: 10px 30px;
   color : white;
   font-weight: 600;
@@ -528,41 +528,41 @@ a.waves-effect .waves-ripple {
     margin-bottom: 16px;
 
 }
-#banner h1 {
+.banner h1 {
   color:#ffffff;
   font-weight: bold;
   /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); */
   text-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
   font-size: 3rem;
 }
-#banner p {
+.banner p {
   letter-spacing: 0.5px;
   color:#ffffff;
   line-height: 1.5;
 }
-#banner .quote-icon-left,#banner .quote-icon-right {
+.banner .quote-icon-left,.banner .quote-icon-right {
   color: #76ABAE;
 }
-#banner .btn-light {
+.banner .btn-light {
   background-color: #254e58;
   border: solid 1px #254e58 !important;
   /* border: solid 1px #ea5420 !important; */
   transition: 0.5s;
 }
-#banner .btn-light:hover {
+.banner .btn-light:hover {
   background-color:#1a373e ;
   /* background-color: transparent!important; */
   border: solid 1px #1a373e !important;
   color: white!important;
 }
-#banner .btn-outline-warning {
+.banner .btn-outline-warning {
   /* border: solid 1px #ff6a36 !important; */
   /* color: #ff6a36!important; */
   background-color: #074173;
   border: solid 1px #074173;
   
 }
-#banner .btn-outline-warning:hover {
+.banner .btn-outline-warning:hover {
   border: solid 1px #06335a !important;
   background-color: #06335a;
   color: white!important;
@@ -715,4 +715,4 @@ text-align: center;
 }
 .form-email h2 {
   font-weight: bold;
-}
+} 

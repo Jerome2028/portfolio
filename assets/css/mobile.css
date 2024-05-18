@@ -1,5 +1,5 @@
 
-@media (max-width: 1025px) {
+@media (max-width: 1026px) {
     #banner h1 {
         font-size: 2.9rem;
         line-height: 1.5;
@@ -29,7 +29,7 @@
     }
     .navbar ul:nth-child(2){
         display: block;
-      }
+    }
     .project .bg-badge {
     margin: .25rem 0;
     }
@@ -40,10 +40,10 @@
         display: none;
     }
     #banner h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .about .col-lg-5 .w-50 {
-        width: 50% !important;
+        width: 25% !important;
     }
     .about .col-md-12:nth-child(2){
         order: 1!important;
@@ -67,16 +67,47 @@
         height: 300px;
         top: 0;
     }
-    #banner {
+    .banner {
         padding: 100px 0px;
+    }
+    .form-email .bg-form img{
+        display: block;
+        margin: auto;
+        padding: 0px 0px 25px 0px;
+    }
+    .about .col-lg-5 .w-50 {
+        width: 200px !important;
+        height: 200px !important;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 20px;
+    }
+    .navbar li {
+        position: relative;
+        padding: 11px 15px;
+    }
+}
+@media (max-width: 376px) {
+    #banner a {
+        width: 45% !important;
+        margin-right: 12px;
     }
     
 }
-@media (max-width: 376px) {
-    .banner a {
-        width: 50% !important;
+@media (max-width: 325px) {
+    #banner a {
+        width: 100% !important;
+        margin-right: 0px;
     }
-}
-@media (max-width: 320px) {
+    #banner h1 {
+        font-size: 1.7rem;
+    }
+    .navbar .btn-warning {
+        padding: 8px 15px;
+    }
+    .form-email .p-5{
+        padding: 1rem !important;
+    }
+    
 
 }
