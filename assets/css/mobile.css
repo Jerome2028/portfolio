@@ -57,6 +57,7 @@
     @media (max-width: 426px) {
     .banner a {
         width: 50% !important;
+        margin-right: 12px;
     }
     #banner h1 {
         font-size: 2rem;
