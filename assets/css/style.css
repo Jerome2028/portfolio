@@ -408,7 +408,7 @@ a.waves-effect .waves-ripple {
   left: 100%;
   visibility: visible;
 }
-.navbar .btn-warning {
+.navbar .btn-warning,.offcanvas-body .btn-warning {
   background-color: #074173;
   border:solid 1px #074173;
   padding: 8px 30px;
@@ -706,6 +706,9 @@ a.waves-effect .waves-ripple {
 .certification p{
 text-align: center;
 }
+
+
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -716,3 +719,9 @@ text-align: center;
 .form-email h2 {
   font-weight: bold;
 } 
+.went-to .row .card > img {
+  float: left!important;
+  /* width: 214px!important;
+  height: 100px!important; */
+  object-fit: cover!important;
+}
